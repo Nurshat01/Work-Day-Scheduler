@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Daily Planner</title>
+</head>
+<body>
+<h1>Daily Planner</h1>
+<div id="currentDay"></div>
+<form id="eventForm">
+    <label for="day">Select Day:</label>
+    <select id="day" name="day">
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+    </select>
+
+    <label for="time">Select Time:</label>
+    <select id="time" name="time">
+        <option value="9:00 AM">9:00 AM</option>
+        <option value="10:00 AM">10:00 AM</option>
+        <option value="11:00 AM">11:00 AM</option>
+        <option value="12:00 PM">12:00 PM</option>
+        <option value="1:00 PM">1:00 PM</option>
+        <option value="2:00 PM">2:00 PM</option>
+        <option value="3:00 PM">3:00 PM</option>
+        <option value="4:00 PM">4:00 PM</option>
+        <option value="5:00 PM">5:00 PM</option>
+        <!-- You can add more time options here -->
+    </select>
+
+    <label for="event">Event:</label>
+    <input type="text" id="event" name="event" placeholder="Add an event">
+
+    <button type="button" onclick="addEvent()">Add Event</button>
+</form>
+
+<table id="eventTable">
+    <thead>
+    <tr>
+        <th>Day</th>
+        <th>Time</th>
+        <th>Event</th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+<script src="./assets/time-block.js"></script>
+</body>
+</html>
